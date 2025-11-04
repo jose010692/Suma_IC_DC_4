@@ -18,6 +18,9 @@ jobs:
 
       - name: Instalar dependencias
         run: npm install
+        
+      - name: Darle Permisos a Jest
+        run: chmod +x ./node_modules/.bin/jest
 
       - name: Ejecutar pruebas
         run: npm test
